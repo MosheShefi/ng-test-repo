@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main',
+  selector: 'app-root',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  title: string;
 
-  constructor() { }
+  constructor() {
+    this.title = "example";  
+  }
 
   ngOnInit(): void {
   }
